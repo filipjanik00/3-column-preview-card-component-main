@@ -21,8 +21,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-4thGx7DsIJ)
-- Live Site URL: [Hosted on GitHub Pages](https://filipjanik00.github.io/stats-preview-card-component-main/)
+- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/3-column-preview-card-using-flexbox-and-grid-jaWcuQ8yLx)
+- Live Site URL: [Hosted on GitHub Pages](https://filipjanik00.github.io/3-column-preview-card-component-main/)
 
 ## My process
 
@@ -36,4 +36,3 @@ This is a solution to the [3-column preview card component challenge on Frontend
 ## Author
 
 - Frontend Mentor - [@filipjanik00](https://www.frontendmentor.io/profile/filipjanik00)
-
