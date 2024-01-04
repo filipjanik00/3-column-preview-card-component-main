@@ -1,0 +1,147 @@
+:root {
+  --clr-primary-100: hsl(31, 77%, 52%);
+  --clr-primary-200: hsl(184, 100%, 22%);
+  --clr-primary-300: hsl(179, 100%, 13%);
+
+  --clr-neutral-100: hsl(0, 0%, 95%);
+  --clr-neutral-300: hsla(0, 0%, 100%, 0.75);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --ff-main: "Big Shoulders Display", sans-serif;
+  --ff-accent: "Lexend Deca", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* General Styling */
+body {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-regular);
+  font-size: 0.938rem;
+  color: var(--clr-neutral-100);
+  background: var(--clr-neutral-100);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+/* Columns Styling */
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.column {
+  --column-padding: 3rem;
+  padding: var(--column-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.column__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.column__description {
+  color: var(--clr-neutral-300);
+  max-width: 23ch;
+  font-family: var(--ff-accent);
+  line-height: 1.6;
+}
+
+.column--orange {
+  background: var(--clr-primary-100);
+}
+
+.column--blue {
+  background: var(--clr-primary-200);
+}
+
+.column--green {
+  background: var(--clr-primary-300);
+}
+
+.column__btn {
+  font-family: var(--ff-accent);
+  align-self: flex-start;
+  margin-top: 3rem;
+  background-color: var(--clr-neutral-100);
+  padding: 0.9rem 2rem;
+  border-radius: 100000000px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.column__btn--orange {
+  color: var(--clr-primary-100);
+}
+
+.column__btn:is(:hover, :focus) {
+  background: transparent;
+  color: var(--clr-neutral-100);
+  border: 2px solid var(--clr-neutral-100);
+}
+
+.column__btn--blue {
+  color: var(--clr-primary-200);
+}
+
+.column__btn--green {
+  color: var(--clr-primary-300);
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .columns {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+
+  .column__description {
+    max-width: 25ch;
+  }
+
+  .column__btn {
+    margin-top: 0.5rem;
+  }
+}
